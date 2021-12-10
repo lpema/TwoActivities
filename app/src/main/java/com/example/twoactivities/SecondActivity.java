@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class SecondActivity extends AppCompatActivity {
     private static final String LOG_TAG = SecondActivity.class.getSimpleName();
     public static final String EXTRA_REPLY =
-            "com.example.android.twoactivities.extra.REPLY";
+            "com.example.android.activities.extra.REPLY";
     private EditText mReply;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,26 +41,26 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     public void onPause(){
         super.onPause();
-        Log.d(LOG_TAG, "onStart");
+        Log.d(LOG_TAG, "onPause");
     }
     @Override
     public void onRestart(){
         super.onRestart();
-        Log.d(LOG_TAG, "onStart");
+        Log.d(LOG_TAG, "onRestart");
     }
     @Override
     public void onResume(){
         super.onResume();
-        Log.d(LOG_TAG, "onStart");
+        Log.d(LOG_TAG, "onResume");
     }
     @Override
     public void onStop(){
         super.onStop();
-        Log.d(LOG_TAG, "onStart");
+        Log.d(LOG_TAG, "onStop");
     }
     @Override
     public void onDestroy(){
         super.onDestroy();
-        Log.d(LOG_TAG, "onStart");
+        Log.d(LOG_TAG, "onDestroy");
     }
 }
